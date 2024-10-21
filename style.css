@@ -1,0 +1,125 @@
+/**** Importation de la police Dosis ****/
+
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 550px;
+    margin: 0 12px;
+}
+
+.container {
+    width: 100%;
+    margin: 3rem auto 0;
+    background-color: #69d3e6;
+    padding: 16px 32px 32px;
+    box-shadow: 1px 2px 6px #333333;
+    border-radius: 4px;
+}
+
+.img {
+    background: url("img/cyber-pic.png") center/cover;
+    height: 280px;
+    border-radius: 4px;
+}
+
+.toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 12px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked + .label .circle {
+    transform: translateX(29px);
+}
+
+.label {
+    background-color: #c9c9c9;
+    height: 33px;
+    width: 69px; 
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #333333;
+}
+
+.moon,
+.sun {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.sun {
+    transform: translate(3px, -1px);
+}
+
+.moon {
+    transform: translate(-3px, -1px) rotate(-10deg);
+}
+
+.circle {
+    background-color: #f7f7f7;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px; 
+    left: 8px; 
+    transition: transform 0.3s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+}
+
+p {
+    margin: 12px 0;
+}
+
+
+/**** Création du Mode Nuit ****/
+
+.dark {
+    background-color: #333333;
+}
+
+.dark section {
+    background-color: #00ffff;
+}
+
+.dark .label {
+    box-shadow: 2px 1px 1px #00ffff;
+    background-color: #888888;
+}
+
+.dark .circle {
+    background-color: #00ffff;
+}
