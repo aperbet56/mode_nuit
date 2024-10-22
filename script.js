@@ -2,7 +2,7 @@
 window.addEventListener("load", () => {
   // Condition if
   if (window.localStorage.darkMode === "true") {
-    // Ajout de la classe dark
+    // Ajout de la classe dark pour la mise en place du mode nuit
     document.body.classList.add("dark");
   }
 });
@@ -17,8 +17,8 @@ darkMode.addEventListener("click", () => {
 
   // Condition if...else
   if (window.localStorage.darkMode === "true") {
-    window.localStorage.darkMode = "false";
+    window.localStorage.darkMode = "false"; // Activation du mode normal
   } else {
-    window.localStorage.darkMode = "true";
+    window.localStorage.darkMode = "true"; // Activation du mode nuit
   }
 });
