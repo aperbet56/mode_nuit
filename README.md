@@ -2,7 +2,7 @@
 
 ## Le challenege
 
-Création d'un mode nuit en HTML5, CSS3 et JavaScript et enregistrement du choix de l'internaute via le local storage.
+Création d'un mode nuit en HTML5, CSS3 et JavaScript et enregistrement des préférences (mode nuit ou mode normal) de l'internaute via le local storage.
 
 ## Démonstration
 
