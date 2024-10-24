@@ -16,6 +16,7 @@ Lien vers le projet : https://aperbet56.github.io/mode_nuit/
 - Flexbox
 - Animations css
 - Booléen en css
+- Importation de la police "Dosis"
 - Page web responsive
 - Desktop first
 - JavaScript
